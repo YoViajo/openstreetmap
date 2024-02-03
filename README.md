@@ -8,9 +8,9 @@ Exploración de los datos del proyecto OpenStreetMap.
 
 [Clasificación mundial de ubicaciones geográficas basada en registros de mosaicos de OSM](01/osm_views.ipynb)
 
-[Operaciones con archivos pbf](02/)
+[Recortar bd OSM (formato pbf) usando polígono](02/)
 
-[Extracción y visualización de elementos OSM para la ciudad de Santa Cruz, Bolivia (R)](03/)
+[Extrae la ubicación de un tipo de característica mediante Overpass y luego visualiza el resultado (R)](03/)
 
-[Visualización de elementos vectoriales con estilos predefinidos (QGIS)](04/)
+[Visualización de líneas y polígonos con estilos predefinidos (QGIS)](04/)
 
