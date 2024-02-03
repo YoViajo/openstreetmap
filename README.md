@@ -1,6 +1,6 @@
 # OpenStreetMap
 
-Herramientas y técnicas geoespaciales
+Exploración de los datos del proyecto OpenStreetMap.
 
 ---
 
