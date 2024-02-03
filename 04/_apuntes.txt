@@ -1,0 +1,6 @@
+Ref: https://twitter.com/newgeographer2/status/1649419343724265477?t=FbDbcvlxrwYJoZLdmAMsww&s=09
+Download the style files to get this look from #OpenStreetMap line and polygon layers in #qgis
+
+Estilos QGIS usados:
+osm_polygons.qml
+osm_lines.qml

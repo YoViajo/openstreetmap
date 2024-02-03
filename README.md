@@ -12,5 +12,5 @@ Herramientas y técnicas geoespaciales
 
 [Extracción y visualización de elementos OSM para la ciudad de Santa Cruz, Bolivia (R)](03/)
 
-
+[Visualización de elementos vectoriales con estilos predefinidos (QGIS)](04/)
 
