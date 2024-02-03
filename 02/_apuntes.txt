@@ -1,0 +1,71 @@
+
+// recortar archivo osm pbf usando una delimitación
+osmconvert entrada.pbf -b=10.5,49,11.5,50 -o=salida.pbf
+
+/opt/osmconvert64 /home/yoviajo/Documentos/lab/geom/geodat/osm/bolivia-latest.osm_20220607.pbf -b=-17.7926357985537,-63.190185628293,-17.7746919062687,-63.170910207938 -o=scz_1a.pbf
+
+X: no funcionó
+
+Scz Primer Anillo
+minimum latitude    -17.7926357985537
+minimum longitude   -63.190185628293
+maximum latitude    -17.7746919062687
+maximum longitude   -63.170910207938
+
+
+// recortar archivo osm pbf usando un polígono en formato polígono Osmosis
+osmconvert input-data.osm.pbf -B=clip-polygon.poly -o=my-output-file.pbf
+
+/opt/osmconvert64 /home/yoviajo/Documentos/lab/geom/geodat/osm/bolivia-latest.osm_20220607.pbf -B=poligono_scz_1a.poly -o=scz_1a.pbf
+
+v: funcionó !
+
+
+// definición contenido polígono
+
+scz_1a
+area_1
+     0.1446693E+03    -0.3826255E+02
+     0.1446627E+03    -0.3825661E+02
+     0.1446763E+03    -0.3824465E+02
+     0.1446813E+03    -0.3824343E+02
+     0.1446824E+03    -0.3824484E+02
+     0.1446826E+03    -0.3825356E+02
+     0.1446876E+03    -0.3825210E+02
+     0.1446919E+03    -0.3824719E+02
+     0.1447006E+03    -0.3824723E+02
+     0.1447042E+03    -0.3825078E+02
+     0.1446758E+03    -0.3826229E+02
+     0.1446693E+03    -0.3826255E+02
+END
+END
+
+// polígono delimitador Scz 1er Anillo
+x1,y1   -63.190185628293    -17.7926357985537
+x2,y1   -63.170910207938    -17.7926357985537
+x2,y2   -63.170910207938    -17.7746919062687
+x1,y2   -63.190185628293    -17.7746919062687
+x1,y1   -63.190185628293    -17.7926357985537
+
+-0.63190185628293E+02    -0.177926357985537E+02
+-0.63170910207938E+02    -0.177926357985537E+02
+-0.63170910207938E+02    -0.177746919062687E+02
+-0.63190185628293E+02    -0.177746919062687E+02
+-0.63190185628293E+02    -0.177926357985537E+02
+
+-63.190185628293    -17.7926357985537
+-63.170910207938    -17.7926357985537
+-63.170910207938    -17.7746919062687
+-63.190185628293    -17.7746919062687
+-63.190185628293    -17.7926357985537
+
+
+// Cálculo de distancia entre elementos especificados de BD OSM
+// Ref: https://github.com/amandasaurus/osm-distance-to-nearest
+osm-distance-to-nearest -i DATA.osm.pbf -a shop=weapons -b amenity=atm,bank -o guns_banks_
+
+
+/home/yoviajo/Documentos/git-github/osm-distance-to-nearest/osm-distance-to-nearest.sh -i /home/yoviajo/Documentos/lab/geom/osm/98/scz_1a.pbf -a highway=traffic_signals -b higway=bus_stop -o semaforos_paradas_
+
+X: falló
+
