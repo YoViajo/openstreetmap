@@ -10,5 +10,7 @@ Herramientas y técnicas geoespaciales
 
 [Operaciones con archivos pbf](02/)
 
+[Extracción y visualización de elementos OSM para la ciudad de Santa Cruz, Bolivia (R)](03/)
+
 
 
